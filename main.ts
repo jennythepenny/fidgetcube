@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onGesture(Gesture.TiltLeft, function () {
     basic.showIcon(IconNames.EigthNote)
-    music.setVolume(35)
+    music.setVolume(75)
     music.playTone(587, music.beat(BeatFraction.Eighth))
 })
 input.onButtonPressed(Button.AB, function () {
@@ -22,7 +22,7 @@ input.onGesture(Gesture.Shake, function () {
 })
 input.onGesture(Gesture.TiltRight, function () {
     basic.showIcon(IconNames.QuarterNote)
-    music.setVolume(35)
+    music.setVolume(75)
     music.playTone(523, music.beat(BeatFraction.Whole))
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
