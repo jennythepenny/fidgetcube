@@ -4,8 +4,11 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onGesture(Gesture.TiltLeft, function () {
     basic.showIcon(IconNames.EigthNote)
-    music.setVolume(75)
+    music.setVolume(100)
     music.playTone(587, music.beat(BeatFraction.Eighth))
+})
+input.onGesture(Gesture.ScreenDown, function () {
+    music.playMelody("G B A G C5 B A B ", 120)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
@@ -22,7 +25,7 @@ input.onGesture(Gesture.Shake, function () {
 })
 input.onGesture(Gesture.TiltRight, function () {
     basic.showIcon(IconNames.QuarterNote)
-    music.setVolume(75)
+    music.setVolume(100)
     music.playTone(523, music.beat(BeatFraction.Whole))
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
