@@ -5,7 +5,7 @@ input.onButtonPressed(Button.A, function () {
 input.onGesture(Gesture.TiltLeft, function () {
     basic.showIcon(IconNames.EigthNote)
     music.setVolume(100)
-    music.playTone(587, music.beat(BeatFraction.Eighth))
+    music.playTone(587, music.beat(BeatFraction.Quarter))
 })
 input.onGesture(Gesture.ScreenDown, function () {
     music.playMelody("G B A G C5 B A B ", 120)
